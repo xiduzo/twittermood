@@ -227,8 +227,8 @@ function normalizeStates() {
 }
 
 // App logic
-app.listen(8000, function() {
-  console.log("App now running on http://localhost:8000");
+app.listen((process.env.PORT || 8000), function() {
+  console.log("App now running");
   callTwitterAPI();
 });
 
